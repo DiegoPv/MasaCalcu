@@ -5,7 +5,7 @@ public class Main
 	{		
 		Calculadora masacre= new Calculadora ();
 		
-		System.out.println("Bienvenido a la calculadora!! v1.0.0");
+		System.out.println("Bienvenido a la calculadora!! v1.1.0");
 		System.out.println ("Ingrese la operación a realizar: ");
 		masacre.Calcular();			
 	}
