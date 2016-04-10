@@ -12,7 +12,7 @@ public class Calculadora
 		Scanner sc = new Scanner(System.in);		
 		cadena= sc.nextLine();		
 		sc.close();
-		StringTokenizer st= new StringTokenizer (cadena, "+-*", true);		
+		StringTokenizer st= new StringTokenizer (cadena, "+-*%", true);		
 		
 		int vnum= 0;
 		int vop= 0;
@@ -51,10 +51,14 @@ public class Calculadora
 				resultado= resultado - operandos.elementAt(contador + 1);
 			}
 			
-			else 
+			else if (operadores.elementAt(contador).compareTo("*")==0)
 			{
 				resultado= resultado * operandos.elementAt(contador + 1);
-			}			
+			}
+			else if (operadores.elementAt(contador).compareTo("%")==0)
+			{
+				resultado= resultado / operandos.elementAt(contador + 1);
+			}	
 			contador++;
 			vop--;		
 		}
