@@ -43,7 +43,8 @@ public class Calculadora
 		do 
 		{
 			if (operadores.elementAt(contador).compareTo("+")==0)				
-			{				
+			{			
+				
 				resultado= resultado + operandos.elementAt(contador + 1);				
 			}
 			else if (operadores.elementAt(contador).compareTo("-")==0)

@@ -8,5 +8,6 @@ public class Main
 		System.out.println("Bienvenido a la calculadora!! v2.0.0");
 		System.out.println ("Ingrese la operación a realizar: ");
 		masacre.Calcular();			
+		System.out.println("Ingresaste?");
 	}
 }
